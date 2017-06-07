@@ -1,0 +1,30 @@
+.paginator {
+  position: absolute;
+  width: 200px;
+  top: 450px;
+  left: 530px;
+  z-index: 3;
+}
+
+.paginator__controls-btn {
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #69463a;
+  font-size: 12px;
+  border: solid 2px rgba(105, 70, 58, 0.5);
+  border-radius: 5px;
+  background: #fdc00f;
+  cursor: pointer;
+
+  &:hover {
+    background: #3296a0;
+    color: #ffffff;
+  }
+  
+  &:active {
+    color: #ffffff;
+    background: #69463a;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+  }
+}

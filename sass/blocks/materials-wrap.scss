@@ -1,0 +1,181 @@
+.materials-wrap {
+  position: relative;
+  width: 580px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #e5d6d0;
+}
+
+.materials-wrap__box {
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.materials-wrap__box svg {
+  position: absolute;
+  width: 30px;
+  top: -10px;
+}
+
+.materials-wrap__box-title {
+  margin-left: 50px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  color: #3296a0;
+  font-weight: bold;
+  border-bottom: solid 1px #69463a;
+}
+
+.materials-wrap__box-link {
+  text-decoration: none;
+  color: #3296a0;
+  line-height: 30px;
+
+  &:hover {
+    color: #69463a;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.materials-wrap__box-text {
+  margin-left: 70px;
+}
+
+.materials-wrap__box-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 240px;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #69463a;
+  font-size: 10px;
+  border: solid 2px rgba(105, 70, 58, 0.5);
+  border-radius: 5px;
+  background: #fdc00f;
+  cursor: pointer;
+
+  &:hover {
+    background: #3296a0;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+    background: #69463a;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+#block_id {
+  display: none;
+}
+
+.materials-wrap__material {
+  margin: 20px 20px;
+}
+
+.materials-wrap__material-link {
+  margin-left: 180px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #69463a;
+  font-size: 12px;
+  border: solid 2px rgba(105, 70, 58, 0.5);
+  border-radius: 5px;
+  background: #fdc00f;
+  cursor: pointer;
+
+  &:hover {
+    background: #3296a0;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+    background: #69463a;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.materials-wrap__material-title {
+  padding-bottom: 10px;
+  color: #3296a0;
+  border-bottom: solid 2px #69463a;
+}
+
+.materials-wrap__material-text {
+  margin-bottom: 20px;
+}
+
+.materials-wrap__schoolbook {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.materials-wrap__block-schoolbook {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.materials-wrap__schoolbook-link {
+  position: absolute;
+  bottom: -40px;
+  left: 40px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #69463a;
+  font-size: 12px;
+  border: solid 2px rgba(105, 70, 58, 0.5);
+  border-radius: 5px;
+  background: #fdc00f;
+  cursor: pointer;
+
+  &:hover {
+    background: #3296a0;
+    color: #ffffff;
+  }
+  
+  &:active {
+    color: #ffffff;
+    background: #69463a;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.materials-wrap__img {
+  border: solid 2px #3296a0;
+  border-radius: 5px;
+
+  &:hover {
+    transform: scale(1.7);
+    z-index: 3;
+  }
+}
+
+.materials-wrap__schoolbook-img {
+  border: solid 2px #3296a0;
+  border-radius: 5px;
+}
+
+.materials-wrap__handiwork-img {
+  margin-left: 160px;
+}
+
+.materials-wrap__decoupage-img,
+.materials-wrap__crochet-img,
+.materials-wrap__knitting-img,
+.materials-wrap__fancywork-img {
+  margin-bottom: 20px;
+}
+
+
+

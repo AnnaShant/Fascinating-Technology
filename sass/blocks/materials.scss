@@ -1,0 +1,70 @@
+.materials {
+  display: flex;
+  justify-content: space-around;
+  width: 960px;
+  margin: 50px auto;
+}
+
+.materials svg {
+  width: 70px;
+  margin-bottom: -50px;
+  margin-left: 200px;
+}
+
+.materials__students,
+.materials__teachers,
+.materials__cognitive {
+  position: relative;
+  width: 240px;
+  padding: 20px;
+  padding-bottom: 35px;
+  text-align: left;
+  background: #e5d6d0;
+}
+
+.materials__head {
+  margin-left: 10px;
+  padding-bottom: 5px;
+  color: #3296a0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: solid 1px #69463a;
+  cursor: pointer;
+
+  &:hover {
+    color: #69463a;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.materials__text {
+  margin: 30px 0 40px 20px;
+}
+
+.materials__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #69463a;
+  border: solid 2px rgba(105, 70, 58, 0.5);
+  border-radius: 5px;
+  background: #fdc00f;
+
+  &:hover {
+    background: #3296a0;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+    background: #69463a;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+  }
+}
