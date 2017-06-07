@@ -1,6 +1,18 @@
 .page-box {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 960px;
+  position: relative;
+  width: 320px;
   margin: 0 auto;
+  background: #f5ece9;
+  }
+
+@media #{$tablet-widths} {
+  .page-box {
+    width: 640px;
+  }
+}
+
+@media #{$desktop-widths} {
+.page-box {
+  width: 960px;
+  }
 }

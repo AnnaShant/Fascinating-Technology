@@ -1,3 +1,4 @@
+@media #{$desktop-widths} {
 #slides {
   position: relative;
   width: 960px;
@@ -38,4 +39,8 @@
 
 .slider:nth-of-type(3) {
   background: url("../img/slider/slide-5.jpg") no-repeat;
+  }
+  .slides__script {
+    display: none;
+  }
 }
