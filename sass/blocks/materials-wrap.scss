@@ -3,13 +3,14 @@
   width: 580px;
   margin: 50px auto;
   padding: 20px;
+  padding-bottom: 70px;
   background: #e5d6d0;
 }
 
 .materials-wrap__box {
   position: relative;
   margin-top: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .materials-wrap__box svg {
@@ -143,7 +144,7 @@
     background: #3296a0;
     color: #ffffff;
   }
-  
+
   &:active {
     color: #ffffff;
     background: #69463a;
