@@ -1,6 +1,134 @@
 .news {
   display: flex;
-  width: 960px;
+  width: 320px;
+  margin: 0px auto;
+}
+
+.news svg {
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  left: 0;
+  z-index: 1;
+}
+
+.news__img {
+  display: none;
+  margin-right: 20px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.news__wrap {
+  padding: 20px;
+  background: #e5d6d0;
+}
+
+.news__block {
+  position: relative;
+  margin-top: 30px;
+}
+
+.news__title {
+  position: relative;
+  margin-left: 40px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3296a0;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: solid 1px;
+  z-index: 2;
+
+  &:hover{
+    color: #69463a;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.news__text {
+  margin-left: 60px;
+}
+
+.news__date {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  font-size: 11px;
+  color: #3296a0;
+}
+
+@media #{$tablet-widths} {
+.news {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.news svg {
+  position: absolute;
+  width: 30px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.news__img {
+  margin-right: 20px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.news__wrap {
+  padding: 20px;
+  background: #e5d6d0;
+}
+
+.news__block {
+  position: relative;
+  margin-top: 35px;
+}
+
+.news__title {
+  position: relative;
+  margin-left: 45px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3296a0;
+  font-weight: bold;
+  border-bottom: solid 1px;
+  z-index: 2;
+
+  &:hover{
+    color: #69463a;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.news__text {
+  margin-left: 60px;
+}
+
+.news__date {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  font-size: 11px;
+  color: #3296a0;
+  }
+}
+
+@media #{$desktop-widths} {
+.news {
+  display: flex;
+  width: 940px;
   margin: 50px auto;
   padding: 0 20px;
 }
@@ -14,6 +142,7 @@
 }
 
 .news__img {
+  display: block;
   margin-right: 20px;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
@@ -58,4 +187,5 @@
   right: 0;
   font-size: 11px;
   color: #3296a0;
+  }
 }

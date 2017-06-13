@@ -37,19 +37,11 @@
 
     <main class="page-box">
 
-      <div class="slides">
-        <ul id="slides">
-          <li class="slider slider__showing">
-          </li>
-          <li class="slider">
-          </li>
-          <li class="slider">
-          </li>
-        </ul>
-        <div class="paginator">
-          <button class="paginator__controls paginator__controls-btn" id="pause">&#9664;</button>
-          <button class="paginator__controls paginator__controls-btn" id="previous">Previous</button>
-          <button class="paginator__controls paginator__controls-btn" id="next">&#9654;</button>
+      <div class="slider" id="main-slider">
+        <div class="slider__wrap">
+          <img src="img/slider/slide-1.jpg" alt="First" class="slider__img">
+          <img src="img/slider/slide-4.jpg" alt="Second" class="slider__img">
+          <img src="img/slider/slide-5.jpg" alt="Third" class="slider__img">
         </div>
       </div>
 
@@ -90,7 +82,7 @@
       </div>
 
       <div class="news">
-        <img class="news__img" src="img/news.jpg" width="450" height="500" alt="News">
+        <img class="news__img" src="img/news.jpg" width="450" height="550" alt="News">
 
         <div class="news__wrap">
 
@@ -143,12 +135,8 @@
         </a>
       </div>
     </footer>
-    <script>
-if(window.screen.width > 768) {
-    document.write('<script src="js/script.js"><\/script>');
-}
-</script>
-    <script src="js/script.js"></script>
+
+    <script src="js/script1.js"></script>
     <script src="js/menu-scripts.js"></script>
   </body>
 </html>

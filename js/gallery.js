@@ -1,26 +1,23 @@
-var largeImg = document.getElementById('largeImg');
+var mas = ["img/fotogallery/9X.jpg","img/fotogallery/5X.jpg","img/fotogallery/1X.jpg","img/fotogallery/8X.jpg"] // массив картинок
+var to = -1;  // Счетчик, указывающий на текущую картинки
 
-    var thumbs = document.getElementById('thumbs');
+function right_arrow() // Открытие следующей картинки(движение вправо)
+{ 
+ var obj = document.getElementById("a");
+  if (to < mas.length-1)  to++ 
+   else
+     to = 0;
+     obj.src = mas[to];	 
+}
 
-    thumbs.onclick = function(e) {
-      var target = e.target;
-
-      while (target != this) {
-
-        if (target.nodeName == 'A') {
-          showThumbnail(target.href, target.title);
-          return false;
-        }
-
-        target = target.parentNode;
-      }
-
-    }
-
-    function showThumbnail(href, title) {
-      largeImg.src = href;
-      largeImg.alt = title;
-    }
+function left_arrow() // Открытие предыдущей картинки(движение влево)
+{     
+ var obj = document.getElementById("a");
+if (to > 0) to--;
+  else
+    to = mas.length-1;
+    obj.src = mas[to];	  			 
+}
 
 
     /* предзагрузка */

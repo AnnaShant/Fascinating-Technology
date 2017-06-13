@@ -16,16 +16,15 @@
 }
 
 #largeImg {
-  width: 956px;
-  height: 500px;
+  width: 600px;
+  height: auto;
+  margin-left: 200px;
   border: solid 2px #3296a0;
   border-radius: 5px;
 }
 
 #thumbs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+ 
   margin: 0;
   padding: 0;
 }

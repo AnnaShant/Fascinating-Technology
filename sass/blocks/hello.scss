@@ -1,7 +1,6 @@
 .hello {
-  width: 880px;
+  width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
   padding-bottom: 20px;
   text-align: left;
   border-top: solid 2px #69463a;
@@ -9,12 +8,59 @@
 }
 
 .hello__head {
+  padding: 0 30px;
   font-size: 30px;
   color: #3296a0;
 }
 
 .hello__text {
-  margin-left: 20px;
+  padding: 0 30px;
   font-size: 18px;
   color: #000000;
+}
+
+@media #{$tablet-widths} {
+.hello {
+  width: 640px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: left;
+  border-top: solid 2px #69463a;
+  border-bottom: solid 2px #69463a;
+}
+
+.hello__head {
+  padding: 0 25px;
+  font-size: 30px;
+  color: #3296a0;
+}
+
+.hello__text {
+  padding: 0 25px;
+  font-size: 18px;
+  color: #000000;
+}
+}
+
+@media #{$desktop-widths} {
+.hello {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: left;
+  border-top: solid 2px #69463a;
+  border-bottom: solid 2px #69463a;
+}
+
+.hello__head {
+  padding: 0 30px;
+  font-size: 30px;
+  color: #3296a0;
+}
+
+.hello__text {
+  padding: 0 30px;
+  font-size: 18px;
+  color: #000000;
+  }
 }

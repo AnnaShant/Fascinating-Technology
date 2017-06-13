@@ -1,53 +1,22 @@
-var slides = document.querySelectorAll('#slides .slider');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
-
-  function nextSlide() {
-    goToSlide(currentSlide+1);
+var total_pics_num = 3; // колличество изображений
+  var interval = 1000;    // задержка между изображениями
+  var time_out = 1;       // задержка смены изображений
+  var i = 0;
+  var timeout;
+  var opacity = 100;
+  function fade_to_next() {
+    opacity--;
+    var k = i + 1;
+    var image_now = 'image_' + i;
+    if (i == total_pics_num) k = 1;
+    var image_next = 'image_' + k;
+    document.getElementById(image_now).style.opacity = opacity/100;
+    document.getElementById(image_now).style.filter = 'alpha(opacity='+ opacity +')';
+    document.getElementById(image_next).style.opacity = (100-opacity)/100;
+    document.getElementById(image_next).style.filter = 'alpha(opacity='+ (100-opacity) +')';
+    timeout = setTimeout("fade_to_next()",time_out);
+    if (opacity==1) {
+      opacity = 100;
+      clearTimeout(timeout);
+    }
   }
-
-  function previousSlide() {
-    goToSlide(currentSlide-1);
-  }
-
-  function goToSlide(n) {
-    slides[currentSlide].className = 'slider';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slider slider__showing';
-  }
-
-var playing = true;
-var pauseButton = document.getElementById('pause');
-
-  function pauseSlideshow() {
-    pauseButton.innerHTML = 'Play';
-    playing = false;
-    clearInterval(slideInterval);
-  }
-
-  function playSlideshow() {
-    pauseButton.innerHTML = 'Pause';
-    playing = true;
-    slideInterval = setInterval(nextSlide,2000);
-  }
-
-    pauseButton.onclick = function() {
-      if(playing) {
-        pauseSlideshow();
-      } else {
-        playSlideshow();
-        }
-      };
-
-var next = document.getElementById('next');
-var previous = document.getElementById('previous');
-
-  next.onclick = function() {
-    pauseSlideshow();
-    nextSlide();
-  };
-
-    previous.onclick = function() {
-    pauseSlideshow();
-    previousSlide();
-  };
