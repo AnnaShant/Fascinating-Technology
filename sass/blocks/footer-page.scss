@@ -9,7 +9,7 @@
 }
 
 .footer__contacts {
-  width: 280px;
+  width: 200px;
   margin: 0 auto;
   color: #ffffff;
 }
@@ -26,8 +26,8 @@
 
 .footer__social {
   display: flex;
-  width: 280px;
-  margin: 10px 70px;
+  width: 200px;
+  margin: 10px 80px 10px 80px;
 
   &--vk {
     margin: 0px 20px;
@@ -35,7 +35,7 @@
     color: #ffffff;
   }
   &--od {
-    margin: 0px 0;
+    margin: 0;
     text-decoration: none;
     color: #ffffff;
   }
@@ -57,7 +57,7 @@
 @media #{$tablet-widths} {
 .footer-page {
   display: flex;
-  width: 640px;
+  width: 700px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px 0;
@@ -67,7 +67,7 @@
 .footer__contacts {
   display: flex;
   width: 290px;
-  margin: 0;
+  margin: 0 0 0 50px;
   color: #ffffff;
 }
 
@@ -86,7 +86,7 @@
 .footer__social {
   display: flex;
   width: 100px;
-  margin-left: 130px;
+  margin-left: 155px;
 
   &--vk {
     margin: 0px 20px;
@@ -94,7 +94,7 @@
     color: #ffffff;
   }
   &--od {
-    margin: 0px 0;
+    margin: 0;
     text-decoration: none;
     color: #ffffff;
   }
@@ -147,7 +147,7 @@
 .footer__social {
   display: flex;
   width: 130px;
-  margin-left: 300px;
+  margin-left: 320px;
 
   &--vk {
     margin: 0px 20px;
@@ -155,7 +155,7 @@
     color: #ffffff;
   }
   &--od {
-    margin: 0px 0;
+    margin: 0;
     text-decoration: none;
     color: #ffffff;
   }

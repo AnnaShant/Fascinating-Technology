@@ -1,5 +1,12 @@
 .logo {
+  display: none;
+}
+
+@media #{$desktop-widths} {
+.logo {
+  display: block;
   position: absolute;
   top: 9px;
   right: 100px;
+  }
 }

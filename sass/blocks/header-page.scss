@@ -1,9 +1,21 @@
 .header-page {
+  width: 320px;
+  background: rgba(245, 236, 233, 0.7);
+}
+
+@media #{$tablet-widths} {
+.header-page {
+  width: 700px;
+  }
+}
+
+@media #{$desktop-widths} {
+.header-page {
   position: absolute;
   width: 1200px;
   padding-top: 100px;
-  background: rgba(245, 236, 233, 0.7);
   top: 0;
   left: 0;
   z-index: 3;
+  }
 }

@@ -1,9 +1,11 @@
 .page {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   font-family: 'Arimo', sans-serif;
   line-height: 24px;
   font-size: 16px;
+  background: #f5ece9;
 }
 
 @media #{$tablet-widths} {
@@ -14,8 +16,6 @@
 
 @media #{$desktop-widths} {
 .page {
-  position: relative;
   width: 1200px;
-  background: #f5ece9;
   }
 }

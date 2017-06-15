@@ -1,0 +1,141 @@
+.menu-mobile {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #3296a0;
+}
+
+.menu-mobile__link,
+.menu-mobile__sub-link {
+    cursor: pointer;
+    display: block;
+    padding: 8px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+
+
+  &:hover {
+    background: #69463a;
+  }
+  &:active {
+    color: #3296a0;
+    background: #fdc00f;
+  }
+}
+
+.menu-mobile__activ {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #3296a0;
+    background: #fdc00f;
+}
+
+.menu-mobile__item {
+  border-bottom: 1px solid #fdc00f;
+  text-transform: uppercase;
+}
+
+.menu-mobile__sub {
+    z-index: 10;
+    display: none;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #69463a;
+}
+
+.menu-mobile__sub {
+  display: block;
+}
+
+.menu-mobile__sub-link {
+  display: block;
+  color: #ffffff;
+  border-top: 1px solid #fdc00f;
+  text-transform: none;
+
+  &:hover {
+    color: #3296a0;
+    background: #fdc00f;
+  }
+}
+
+.menu-mobile__students {
+  display: block;
+}
+
+.menu-mobile__students-link {
+  display: block;
+}
+
+.menu-mobile__cognitiv {
+  display: block;
+}
+
+.menu-mobile__cognitiv-link {
+  display: block;
+}
+
+@media #{$mobile-widths-only} {
+  .menu-mobile__sub--closed .menu-mobile__sub-item {
+    display: none;
+  }
+  .menu-mobile__sub--nojs .menu-mobile__sub-toggle {
+    display: none;
+  }
+  .menu-mobile__sub--nojs .menu-mobile__sub-item {
+    display: block;
+  }
+
+  .menu-mobile__students--closed .menu-mobile__students-item {
+    display: none;
+  }
+  .menu-mobile__students--nojs .menu-mobile__students-toggle {
+    display: none;
+  }
+  .menu-mobile__students--nojs .menu-mobile__students-item {
+    display: block;
+  }
+
+  .menu-mobile__cognitiv--closed .menu-mobile__cognitiv-item {
+    display: none;
+  }
+  .menu-mobile__cognitiv--nojs .menu-mobile__cognitiv-toggle {
+    display: none;
+  }
+  .menu-mobile__cognitiv--nojs .menu-mobile__cognitiv-item {
+    display: block;
+  }
+}
+
+@media #{$tablet-widths} {
+  .menu-mobile {
+    width: 700px;
+}
+
+.menu-mobile__sub {
+    width: 700px;
+}
+  .menu-mobile__sub--closed .menu-mobile__sub-item {
+    display: none;
+  }
+
+  .menu-mobile__students--closed .menu-mobile__students-item {
+    display: none;
+  }
+
+  .menu-mobile__cognitiv--closed .menu-mobile__cognitiv-item {
+    display: none;
+  }
+}
+
+@media #{$desktop-widths} {
+  .menu-mobile {
+    display: none;
+  }
+}
