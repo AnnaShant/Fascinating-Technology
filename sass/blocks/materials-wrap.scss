@@ -1,16 +1,64 @@
 .materials-wrap {
   position: relative;
-  width: 580px;
-  margin: 50px auto;
-  padding: 20px;
-  padding-bottom: 70px;
+  width: 320px;
+  padding-top: 10px;
   background: #e5d6d0;
 }
 
 .materials-wrap__box {
   position: relative;
-  margin-top: 35px;
-  margin-bottom: 20px;
+  padding: 20px 20px;
+}
+
+.materials-wrap__box svg {
+  position: absolute;
+  width: 30px;
+  top: 20px;
+  right: 40px;
+}
+
+.materials-wrap__box-title {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  color: #3296a0;
+  font-weight: bold;
+  border-bottom: solid 1px #69463a;
+}
+
+.materials-wrap__box-link {
+  text-decoration: none;
+  color: #3296a0;
+  line-height: 30px;
+
+  &:hover {
+    color: #69463a;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media #{$tablet-widths} {
+  .materials-wrap {
+  position: relative;
+  width: 700px;
+  }
+}
+
+@media #{$desktop-widths} {
+.materials-wrap {
+  position: relative;
+  float: right;
+  width: 640px;
+  margin: 50px 0;
+  background: #e5d6d0;
+}
+
+.materials-wrap__box {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .materials-wrap__box svg {
@@ -20,7 +68,7 @@
 }
 
 .materials-wrap__box-title {
-  margin-left: 50px;
+  margin-left: 20px;
   padding-bottom: 5px;
   text-transform: uppercase;
   color: #3296a0;
@@ -43,7 +91,7 @@
 }
 
 .materials-wrap__box-text {
-  margin-left: 70px;
+  margin-left: 40px;
 }
 
 .materials-wrap__box-btn {
@@ -176,6 +224,7 @@
 .materials-wrap__knitting-img,
 .materials-wrap__fancywork-img {
   margin-bottom: 20px;
+}
 }
 
 

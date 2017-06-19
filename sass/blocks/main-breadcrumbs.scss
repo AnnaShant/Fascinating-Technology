@@ -1,7 +1,14 @@
 .main-breadcrumbs {
+	display: none;
+}
+
+@media #{$desktop-widths} {
+.main-breadcrumbs {
+  display: block;
   position: relative;
-  width: 300px;
-  margin: 50px 40px 50px 0;
+  float: left;
+  width: 270px;
+  margin: 50px 0px 50px 0;
   background: #3296a0;
   box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.5);
 }
@@ -83,6 +90,7 @@
   color: #ffffff;
   background: #69463a;
   border-radius: 5px;
+}
 }
 
 

@@ -1,5 +1,6 @@
 .page-box {
   position: relative;
+  display: block;
   width: 320px;
   margin: 0 auto;
   background: #f5ece9;
@@ -7,8 +8,7 @@
 
 @media #{$tablet-widths} {
   .page-box {
-    width: 640px;
-    margin: 0 auto;
+    width: 700px;
   }
 }
 

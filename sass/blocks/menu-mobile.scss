@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
     background: #3296a0;
 }
 
@@ -116,10 +117,12 @@
 @media #{$tablet-widths} {
   .menu-mobile {
     width: 700px;
+    margin: 0 auto;
 }
 
 .menu-mobile__sub {
     width: 700px;
+    margin: 0 auto;
 }
   .menu-mobile__sub--closed .menu-mobile__sub-item {
     display: none;

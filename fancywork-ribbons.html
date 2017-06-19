@@ -32,23 +32,78 @@
           </ul>
         </div>
       </div>
+
+      <div class="menu-mobile">
+        <div class="logo-mobile">
+          <a href="index.html">
+            <img class="logo-mobile__img" src="img/logo2.png" width="170" height="45" alt="Logo">
+          </a>
+        </div>
+
+        <ul class="menu-mobile">
+          <li class="menu-mobile__item"><a class="menu-mobile__link" href="index.html">Главная</a></li>
+          <li class="menu-mobile__item"><a class="menu-mobile__activ menu-mobile__sub-toggle">Учебные материалы</a>
+
+            <ul class="menu-mobile__sub menu-mobile__sub--closed menu-mobile__sub--nojs">
+              <li class="menu-mobile__sub-item"><a class="menu-mobile__sub-link menu-mobile__students-toggle">Ученикам</a></li>
+
+                <ul class="menu-mobile__students menu-mobile__students--closed menu-mobile__students--nojs">
+                  <li class="menu-mobile__students-item">
+                    <a class="menu-mobile__students-link" href="schoolbook.html">Учебники</a>
+                  </li>
+                  <li class="menu-mobile__students-item">
+                    <a class="menu-mobile__students-link" href="creative-projects.html">Творческие проекты</a>
+                  </li>
+                </ul>
+
+              <li class="menu-mobile__sub-item"><a class="menu-mobile__sub-link" href="material-teachers.html">Учителям</a></li>
+
+              <li class="menu-mobile__sub-item"><a class="menu-mobile__sub-link menu-mobile__cognitiv-toggle">Познавательное</a></li>
+
+                <ul class="menu-mobile__cognitiv menu-mobile__cognitiv--closed menu-mobile__cognitiv--nojs">
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="handiwork.html">Рукоделие</a>
+                  </li>
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="fancywork.html">Вышивка</a>
+                  </li>
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="fancywork-ribbons.html">Вышивка лентами</a>
+                  </li>
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="knitting.html">Вязание спицами</a>
+                  </li>
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="crochet.html">Вязание крючком</a>
+                  </li>
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="decoupage.html">Декупаж</a>
+                  </li>
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="sewing.html">Шитье</a>
+                  </li>
+                  <li class="menu-mobile__cognitiv-item">
+                    <a class="menu-mobile__cognitiv-link" href="cookery.html">Кулинария</a>
+                  </li>
+                </ul>
+
+            </ul>
+          </li>
+
+          <li class="menu-mobile__item"><a class="menu-mobile__link" href="author.html">Обо мне</a></li>
+          <li class="menu-mobile__item"><a class="menu-mobile__link" href="fotogallery.html">Фотогалерея</a></li>
+        </ul>
+      </div>
+
     </header>
 
     <main class="page-box">
 
-      <div class="slides">
-        <ul id="slides">
-          <li class="slider slider__showing">
-          </li>
-          <li class="slider">
-          </li>
-          <li class="slider">
-          </li>
-        </ul>
-        <div class="paginator">
-          <button class="paginator__controls paginator__controls-btn" id="pause">&#9664;</button>
-          <button class="paginator__controls paginator__controls-btn" id="previous">Previous</button>
-          <button class="paginator__controls paginator__controls-btn" id="next">&#9654;</button>
+      <div class="slider" id="main-slider">
+        <div class="slider__wrap">
+          <img src="img/slider/slide-1.jpg" alt="First" class="slider__img">
+          <img src="img/slider/slide-4.jpg" alt="Second" class="slider__img">
+          <img src="img/slider/slide-5.jpg" alt="Third" class="slider__img">
         </div>
       </div>
 
@@ -191,7 +246,8 @@
         </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="js/mobile-menu.js"></script>
     <script src="js/hide-open.js"></script>
   </body>
 </html>

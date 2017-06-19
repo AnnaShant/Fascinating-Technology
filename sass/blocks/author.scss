@@ -1,7 +1,129 @@
 .author {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.author__title-wrap {
+  width: 280px;
+  color: #3296a0;
+  border-bottom: solid 2px #69463a;
+}
+
+.author__text-bold {
+  padding: 5px;
+  color: #3296a0;
+  border-bottom: solid 1px #69463a;
+}
+
+.author__text {
+  position: relative;
+  width: 280px;
+  padding-bottom: 10px;
+}
+
+.author__text svg {
+  position: absolute;
+  width: 80px;
+  top: -15px;
+  right: 0;
+}
+
+.author__text-wrap {
+  padding-top: 5px;
+  padding-left: 20px;
+  background: #e5d6d0;
+
+  &--bottom {
+    margin-top: 10px;
+    margin-bottom: -16px;
+  }
+}
+
+.author__foto {
+  margin: 0px 0px 20px -10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.author__pictures {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.author__img {
+  margin-bottom: 5px;
+  border: solid 2px #3296a0;
+  border-radius: 5px;
+  line-height: 0;
+}
+
+@media #{$tablet-widths} {
+.author {
+  width: 700px;
+  margin: 20px 0;
+}
+
+.author__title-wrap {
+  width: 300px;
+  margin-left: 350px;
+}
+
+.author__text-bold {
+  padding: 5px;
+}
+
+.author__text {
+  position: relative;
+  width: 640px;
+  margin: 10px 20px 10px 20px;
+}
+
+.author__text svg {
+  position: absolute;
+  width: 80px;
+  top: -10px;
+  left: 230px;
+}
+
+.author__text-wrap {
+  padding: 0px 20px;
+  background: #e5d6d0;
+
+  &--bottom {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+  }
+}
+
+.author__foto {
+  margin: 20px 20px 20px 0;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.author__pictures {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  padding-top: 20px;
+  border-top: solid 2px #69463a;
+  border-bottom: solid 2px #69463a;
+}
+
+.author__img {
+  border: solid 2px #3296a0;
+  border-radius: 5px;
+  line-height: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+.author {
   width: 960px;
   margin: 50px 0;
-  padding: 0 20px;
 }
 
 .author__title-wrap {
@@ -19,6 +141,7 @@
 }
 
 .author__text {
+  width: 900px;
   position: relative;
   margin: 20px 20px 10px 20px;
 }
@@ -27,7 +150,7 @@
   position: absolute;
   width: 180px;
   top: 0;
-  right: 0;
+  left: 700px;
 }
 
 .author__text-wrap {
@@ -65,6 +188,7 @@
   &:hover{
     transform: scale(2.5);
     z-index: 3;
+    }
   }
 }
 
