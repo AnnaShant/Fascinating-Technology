@@ -41,8 +41,8 @@
 }
 
 .menu-mobile__sub {
-    z-index: 10;
     display: none;
+    z-index: 10;
     width: 320px;
     margin: 0;
     padding: 0;
@@ -58,7 +58,6 @@
   display: block;
   color: #ffffff;
   border-top: 1px solid #fdc00f;
-  text-transform: none;
 
   &:hover {
     color: #3296a0;
@@ -66,20 +65,31 @@
   }
 }
 
-.menu-mobile__students {
-  display: block;
-}
-
-.menu-mobile__students-link {
-  display: block;
-}
-
+.menu-mobile__students,
 .menu-mobile__cognitiv {
   display: block;
+  margin-left: -40px;
+  list-style: none;
 }
 
+.menu-mobile__students-item,
+.menu-mobile__cognitiv-item {
+  padding: 5px 0;
+}
+
+.menu-mobile__students-link,
 .menu-mobile__cognitiv-link {
   display: block;
+  text-decoration: none;
+  color: #fdc00f;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #3296a0;
+  }
 }
 
 @media #{$mobile-widths-only} {

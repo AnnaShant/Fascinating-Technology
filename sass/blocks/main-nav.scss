@@ -3,6 +3,7 @@
 }
 
 @media #{$desktop-widths} {
+
 .main-nav__mobile {
   display: none;
 }
@@ -25,7 +26,7 @@
 .main-nav__item {
   position: relative;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 18px;
   text-align: center;
   vertical-align: middle;
 }
@@ -70,4 +71,3 @@
     }
   }
 }
-

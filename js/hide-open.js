@@ -5,4 +5,4 @@ if (obj.style.display != "block") {
 obj.style.display = "block";}
 else obj.style.display = "none"; }
 else alert("Элемент с id: " + element_id + " не найден!");
-}  
+}

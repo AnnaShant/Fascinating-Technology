@@ -55,11 +55,11 @@
 
 .news__date {
   position: absolute;
-  bottom: -40px;
+  bottom: -35px;
   right: 0;
   font-size: 11px;
   color: #3296a0;
-}
+  }
 
 @media #{$tablet-widths} {
 .news {
@@ -118,7 +118,7 @@
 
 .news__date {
   position: absolute;
-  bottom: -30px;
+  bottom: -35px;
   right: 0;
   font-size: 11px;
   color: #3296a0;
@@ -179,13 +179,5 @@
 
 .news__text {
   margin-left: 60px;
-}
-
-.news__date {
-  position: absolute;
-  bottom: -30px;
-  right: 0;
-  font-size: 11px;
-  color: #3296a0;
   }
 }
